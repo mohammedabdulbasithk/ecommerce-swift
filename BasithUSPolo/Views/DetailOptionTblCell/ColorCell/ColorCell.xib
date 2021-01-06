@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCell" id="gTV-IL-0wX" customClass="ColorCell" customModule="BasithUSPolo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="108" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="108" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4E-x7-YOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="108" height="120"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cyj-jw-B7s">
+                                <rect key="frame" x="44" y="50" width="20" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="3BC-SR-vEV"/>
+                                    <constraint firstAttribute="width" constant="20" id="cPu-Wv-gNn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cyj-jw-B7s" firstAttribute="centerY" secondItem="f4E-x7-YOZ" secondAttribute="centerY" id="DaF-fJ-T9L"/>
+                            <constraint firstItem="Cyj-jw-B7s" firstAttribute="centerX" secondItem="f4E-x7-YOZ" secondAttribute="centerX" id="LeL-Qk-Hi8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="f4E-x7-YOZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BTP-k7-iSY"/>
+                <constraint firstAttribute="trailing" secondItem="f4E-x7-YOZ" secondAttribute="trailing" id="Ilm-in-b1c"/>
+                <constraint firstAttribute="bottom" secondItem="f4E-x7-YOZ" secondAttribute="bottom" id="mb1-K6-Bvz"/>
+                <constraint firstItem="f4E-x7-YOZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vin-b5-3f3"/>
+            </constraints>
+            <size key="customSize" width="108" height="120"/>
+            <connections>
+                <outlet property="bgView" destination="f4E-x7-YOZ" id="CCX-y6-C59"/>
+                <outlet property="colorView" destination="Cyj-jw-B7s" id="Cpf-kc-bLg"/>
+            </connections>
+            <point key="canvasLocation" x="127.53623188405798" y="107.8125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
